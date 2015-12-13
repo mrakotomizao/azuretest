@@ -20,7 +20,7 @@ get_header(); ?>
 							global $post;
 							
 							if ( 'option1' == gridsby_sanitize_index_content( get_theme_mod( 'gridsby_post_time_method' ) ) ) :  
-    						$args = array( 'post_type' => 'post', 'posts_per_page' => -1, 'order' => 'ASC', 'tax_query' => 				
+    						$args = array( 'post_type' => 'post', 'posts_per_page' => 8, 'order' => 'ASC', 'tax_query' => 				
 										array(
       									'taxonomy' => 'post_format',
       									'field' => 'slug',
@@ -30,7 +30,7 @@ get_header(); ?>
 							
 							else :
 							
-							$args = array( 'post_type' => 'post', 'posts_per_page' => -1, 'tax_query' => 				
+							$args = array( 'post_type' => 'post', 'posts_per_page' => 8, 'tax_query' => 				
 										array(
       									'taxonomy' => 'post_format',
       									'field' => 'slug',
@@ -74,7 +74,7 @@ get_header(); ?>
 							
 							if ( 'option1' == gridsby_sanitize_index_content( get_theme_mod( 'gridsby_post_time_method' ) ) ) :  
 							
-    						$args = array( 'post_type' => 'post', 'posts_per_page' => -1, 'order' => 'ASC', 'tax_query' => 	
+    						$args = array( 'post_type' => 'post', 'posts_per_page' => 8, 'order' => 'ASC', 'tax_query' => 	
 										array(
       									'taxonomy' => 'post_format',
       									'field' => 'slug',
@@ -84,7 +84,7 @@ get_header(); ?>
 								
 							else :
 							
-							$args = array( 'post_type' => 'post', 'posts_per_page' => -1, 'tax_query' => 
+							$args = array( 'post_type' => 'post', 'posts_per_page' => 8, 'tax_query' => 
 										array(
       									'taxonomy' => 'post_format',
       									'field' => 'slug',
